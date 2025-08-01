@@ -1,0 +1,135 @@
+/*
+
+Name: Josh Gooch
+Date: June 30, 2025
+Filename: style.css
+
+*/
+
+/* Here, we import a special font for by accessing a Google API. */
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet"');
+
+/* This CSS rule is for formatting the text in the navigation section to be bold and an appropriate size. */
+
+nav {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+/* Formatting link text and font weight. Unvisited links are colored white. */
+
+a {
+    font-variant: small-caps;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+/* Visited links will be colored pink. */
+
+a:visited {
+    color: pink;
+}
+
+/* This is a psuedoclass to color links that are hovered over, using an RGB value to select an appropriate shade. */
+
+a:hover {
+    background-color: rgb(102, 0, 255);
+}
+
+/* Header sections are aligned to the center, and contain a solid white bottom border. */
+
+header {
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+/* This page_header ID creates a decorative box for displaying the page title on each HTML document. It is applied to both pages. */
+
+#page_header {
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(0, 153, 255);
+    margin: 10px 5px 10px 5px;
+    box-shadow: 5px 3px 3px black;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+/* This class is for formatting the sections on the main page, using principles from the Box method. */
+
+.main_page_section {
+    margin: 10px 5px 10px 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+/* This rule is for formatting generic list items. */
+
+
+li {
+    font-size: 24px;
+    font-family: Garamond;
+}
+
+/* This rule is for formatting list items that are part of the main_page_product_desc class. */
+
+li.main_page_product_desc {
+    font-family: "Grenze Gotisch";
+    font-size: 24px;
+    font-style: normal;
+}
+
+/* This rule is for formatting the product sections on the product page using the Box method. */
+
+.product_page_product_desc {
+    margin: 10px 5px 10px 5px;
+    padding: 5px 0px 40px 5px;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    border-color: white;
+}
+
+/* This rule formats the backgrounds and primary text color of the website. */
+
+body {
+    background-color: rgb(0, 0, 153);
+    color: white;
+    font-family: "Grenze Gotisch";
+}
+
+/* This rule makes the h1 headings have the special Google font and to be an appropriate size and font weight */
+
+h1 {
+    font-family: "Grenze Gotisch";
+    font-size: 64px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* This rule makes the h2 headings have the special Google font and to be an appropriate size and font weight */
+
+h2 {
+    font-family: "Grenze Gotisch";
+    font-size: 40px;
+    font-weight: 800;
+    font-style: normal;
+    margin-bottom: 1px;
+}
+
+/* This rule makes the h2 headings have a general font and to be an appropriate size and font weight */
+
+p {
+    font-family: "Garamond";
+    font-weight: bold;
+    font-size: 26px;
+    font-style: normal;
+}
+
+/* This rule helps the footer on each page to have a top border and to have center-aligned text. */
+
+footer {
+    border-top: 2px solid silver;
+    text-align: center;
+}
