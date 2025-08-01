@@ -6,4 +6,4 @@
 
 **Live Site:** https://github.com/goochmawn314/cis-130-final
 
-![Screenshot of the site][Images/site_screenshot.jpg]
+![Screenshot of the site](Images/site_screenshot.jpg)
