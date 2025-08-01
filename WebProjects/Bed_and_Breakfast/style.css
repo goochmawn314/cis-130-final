@@ -1,0 +1,281 @@
+/*
+
+Name: Josh Gooch
+Date: July 7, 2025
+Filename: style.css
+
+*/
+
+/* Here, we import a special font for by accessing a Google API. */
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet"');
+
+/* Here, we create a rule for the nav section. Note that it is sticky so it scrolls with the page, and has a high z-index so it is always on top. */
+
+nav {
+    font-weight: bold;
+    font-size: 35px;
+    position:sticky;
+    top:0px;
+    z-index:500;
+    background-color:bisque;
+    font-family: "Grenze Gotisch";
+}
+
+/* Here, we create formatting rule for unclicked links. */
+
+a {
+    font-variant: small-caps;
+    text-decoration: none;
+    color: blue;
+    font-weight: 400;
+}
+
+/* This formats the special icons in the navigation section. */
+
+i
+{
+  color:maroon;
+  font-size:27px;
+}
+
+/* Visited links will be colored purple. */
+
+a:visited {
+    color: purple;
+}
+
+/* This is a psuedoclass to color links that are hovered over, using an RGB value to select an appropriate shade. */
+
+a:hover {
+    background-color: yellow;
+}
+
+/* This rule will color the background of the document to a tannish color, and text defaults to black. */
+
+body {
+    background-color: bisque;
+    color: black;
+}
+
+/* Formatting specifications for a page_header object, which will appear at the top of each page. Note it uses a banner image of a sunset. */
+
+#page_header {
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: black;
+    background-image: url('Images/sunset.jpg');
+    background-size:cover;
+    background-position-y:-100px;
+    margin: 10px 5px 10px 5px;
+    box-shadow: 5px 3px 3px black;
+    color:white;
+    text-align:center;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    font-family: "Grenze Gotisch";
+}
+
+/* Formatting specifications for a page_section object, which will contain the primary content for each page. */
+
+.page_section {
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: black;
+    background-color: maroon;
+    box-shadow: 5px 3px 3px black;
+    color:white;
+    margin: 2px 5px 2px 5px;
+    padding-left: 15px;
+}
+
+/* I use this dotted line as a content separator on the main page. */
+
+hr.dotted {
+  border-top: 0.5px dotted white;
+}
+
+/* This formats h1 text. */
+
+h1 {
+    font-family: "Grenze Gotisch";
+    font-size: 45px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* This formats h2 text. */
+
+h2 {
+    font-family: "Grenze Gotisch";
+    font-size: 35px;
+    font-weight: 800;
+    font-style: normal;
+    line-height:16px;
+}
+
+/* This formats paragraph text. */
+
+p {
+    font-family: "Garamond";
+    font-weight: bold;
+    font-size: 20px;
+    font-style: normal;
+}
+
+/* This formats images, and gives them a solid border.*/
+
+img {
+    border: 5px solid black;
+}
+
+/* This centers the footer text. */
+
+footer {
+    text-align: center;
+}
+
+/* These specifications format the callout box on each page. I used W3Schools to help guide me on this part. */
+
+.callout {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width:400px;
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: #ccc;
+  color: black
+}
+
+.callout-header {
+  padding: 25px 15px;
+  background: red;
+  font-size: 30px;
+  color: white;
+}
+
+/* These classes are tied to the close button on the callout box. */
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: lightgrey;
+}
+
+/* Formatting my table to have solid borders, and be centered on the page. */
+
+table
+{
+  margin-left:auto;
+  margin-right:auto;
+  border: 3px solid black;
+  border-spacing:0px;
+}
+
+/* Formatting table rows, table headers, and table data. */
+
+tr, th, td
+{
+  border: 2px solid black;
+  font-size:22px;
+  text-align:center;
+  padding:8px;
+  font-family:Garamond;
+  font-weight:bold;
+}
+
+/* These two psuedoclasses cause the table rows to alternate in color. */
+
+tr:nth-child(odd)
+{
+  background-color:rgb(224, 179, 133);
+  color:black;
+}
+
+tr:nth-child(even)
+{
+  background-color:AliceBlue;
+  color:black;
+}
+
+/* The contact class formats the firstname, lastname, phone, and email text entry queries to be stacked on top of each other. */
+
+.contact
+{
+  display:block;
+  padding-bottom:15px;
+  position:relative;
+  font-weight:bold;
+  color:yellow;
+}
+
+/* This rule formats the input boxes for the contact information. */
+
+.input{
+  position:absolute;
+  left:8%;
+  width:35%;
+}
+
+/* This rule formats the final Submit button on the form, and places it in a good location. It also includes a hover option.*/
+
+.submit
+{
+  width:initial;
+  position:initial;
+  background-color:blue;
+  color:white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.submit:hover {
+  background-color: yellow;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  color: black;
+}
+
+/* This rule formats paragraph text in the checkbox section of the form. */
+
+p.checkbox
+{
+  font-family:'Times New Roman';
+  font-size:16px;
+  padding-top:2px;
+  color:yellow;
+}
+
+/* This rule formats paragraph text in the radio section of the form. */
+
+p.radio
+{
+  font-family:'Times New Roman';
+  font-size:16px;
+  padding-top:2px;
+  color:yellow;
+}
+
+/* This rule formats the boxes in the checkbox section of the form, and places them in column fashion. */
+
+.input_checkbox
+{
+  position:absolute;
+  left:25%;
+}
+
+/* This rule formats the buttons in the radio section of the form, and places them in column fashion. */
+
+.radio_checkbox
+{
+  position:absolute;
+  left:25%;
+}

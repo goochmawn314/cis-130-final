@@ -1,0 +1,228 @@
+/*
+
+Name: Josh Gooch
+Date: August 01, 2025
+Filename: style.css
+
+*/
+
+/* Make the navbar sticky, and apply a border on the bottom to visually partition it from the rest of the page. */
+
+nav
+{
+    position:sticky;
+    top:0;
+    border-bottom: solid 4px black;
+}
+
+/* Embolden the navbar links to make them more readable. */
+
+.navbar-nav > .nav-item
+{
+    font-weight:bold;
+}
+
+/* Add some spacing between the navbar links so they don't look so crammed. */
+
+.navbar-nav > a
+{
+    margin-left:20px;
+}
+
+/* Add some hover styling for aesthetic purposes */
+
+.navbar-nav > a:hover
+{
+    border-radius:15px;
+    color:blue;
+    background-color:white;
+}
+
+body
+{
+    background-color:powderblue;
+}
+
+/* Style the page header section */
+
+#page_header {
+    border-radius:50px;
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: black;
+    margin: 15px 5px 25px 5px;
+    padding:20px;
+    text-align:center;
+    font-family:Bitcount Prop Single;
+    background-color:maroon;
+    color:white;
+    height:175px;
+    background-image:url("../Images/01_headerbackground.jpg");
+    background-position:center;
+}
+
+/* Style the h1 element belonging to a page_header ID */
+
+#page_header > h1
+{
+    font-size:75px;
+    text-shadow: 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px red,
+    0 0 20px red,
+    0 0 25px red,
+    0 0 35px red;
+    
+}
+
+/* Style the h4 element belonging to a page_header ID */
+
+#page_header > h2
+{
+    font-size:35px;
+    position:relative;
+    top:-10px;
+}
+
+/* Bootstrap makes HR objects a color hue I didn't like, so I have to create a special class for them. */
+
+.special_hr
+{
+    margin:auto;
+    width:90%;
+    border-top: 2px solid navy;
+    border-radius: 5px;
+}
+
+/* Formatting section objects with font and spacing rules. */
+
+section
+{
+    margin-top:50px;
+    font-family:Times New Roman;
+    padding-left:25px;
+    margin-bottom:50px;
+}
+
+/* Formatting the mobile footer. */
+
+footer
+{
+    margin-top:50px;
+    font-family:Times New Roman;
+    padding-left:25px;
+    margin-bottom:50px;
+    text-align:center;
+    font-size:150%;
+}
+
+/* Formatting h2 objects belonging to sections. These are the titles of each section on the main page. */
+
+section h3
+{
+    text-decoration:underline;
+}
+
+/* Formatting paragraph objects belonging to sections. These are the body text of each section on the main page. */
+
+section p
+{
+    font-size:18px;
+}
+
+/* Formatting mobile images to have rounded borders and spacing. */
+
+img
+{
+    padding-bottom:15px;
+    border-radius:25px;
+}
+
+/* Formatting table headers and table data. */
+
+th, td
+{
+    text-align:center;
+    font-size:14px;
+}
+
+/* This list container uses CSS-gridding to put the skills lists side-by-side. */
+
+.list-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px; 
+}
+
+/* The first media query changes body color for tracking purposes, increases the width of the section dividers, increases tabular font size, and floats the images to the right. */
+
+@media screen and (min-width: 576px)
+{
+
+    body
+    {
+        background-color:antiquewhite;
+    }
+
+    .special_hr
+    {
+        border-width:3px;
+    }
+    
+    th, td
+    {
+        font-size:15px;
+    }
+
+    img
+    {
+        float:right;
+        margin-right:30px;
+    }
+}
+
+/* The second media query renders a more professional looking font in the section and footer, and further increases tabular font size. */
+
+
+@media screen and (min-width: 720px)
+{
+
+    section, footer
+    {
+        font-family:'Trebuchet MS';
+    }
+
+    th, td
+    {
+        font-size:16px;
+    }
+
+    body
+    {
+        background-color:aliceblue;
+    }
+
+} 
+
+/* The final media query makes the tabular data bigger, and adds some spacing to images so they are not floating in an unseemly location. */
+
+
+@media screen and (min-width: 992px) 
+{
+    th, td
+    {
+        font-size:18px;
+    }
+
+    img
+    {
+        margin-bottom:15px;
+        margin-left:5px;
+    }
+
+    body
+    {
+        background-color:white;
+    }
+
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--- 
+
+Name: Josh Gooch
+Date: July 7, 2025
+Filename: thankyou.html
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+        function printQuery()
+        {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+
+            for (var i = 0; i < vars.length; i++)
+            {
+                var pair = vars[i].split("=");
+                document.write(pair[0] + ": " + pair[1] + "<br />");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    
+    <nav>
+        <a href="index.html"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home Page&nbsp;&nbsp;</a> | &nbsp;
+        <a href="rooms.html"><i class="fa-solid fa-key"></i>&nbsp;&nbsp;Room Options&nbsp;&nbsp;</a> | &nbsp;
+        <a href="request.html"><i class="fa-solid fa-circle-info"></i>&nbsp;&nbsp;Request Info&nbsp;&nbsp;</a>
+    </nav>
+
+    <header id="page_header">
+        <h1 style="position:relative;bottom:15px;font-size:75px;">Thank You!</h1>
+        <p style="position:relative;bottom:45px;font-size:32px;">You're Really Too Kind</p>
+    </header>
+
+    <section class = "page_section">
+    <h2>Thank you for submitting your query! We will be in touch with you soon.</h2>
+    <script>
+        printQuery();
+    </script>
+    </section>
+
+    <footer>
+        <h2>Call and Reserve Now!</h2>
+        <p>&#169; Ye Olde Manor, 2025</p>
+        <p>&#9990; (417) 334-3300</p>
+        <p>&#x2709; 1131 Lonesome Drive, Branson, MO 65615</p>
+    </footer>
+
+</body>
+
+</html>

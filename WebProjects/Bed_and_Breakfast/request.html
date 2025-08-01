@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--- 
+
+Name: Josh Gooch
+Date: July 7, 2025
+Filename: request.html
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home Page&nbsp;&nbsp;</a> | &nbsp;
+        <a href="rooms.html"><i class="fa-solid fa-key"></i>&nbsp;&nbsp;Room Options&nbsp;&nbsp;</a> | &nbsp;
+        <a href="request.html"><i class="fa-solid fa-circle-info"></i>&nbsp;&nbsp;Request Info&nbsp;&nbsp;</a>
+    </nav>
+
+    <header id="page_header">
+        <h1 style="position:relative;bottom:15px;font-size:75px;">Request Info</h1>
+        <p style="position:relative;bottom:45px;font-size:32px;">Ask Us Something!</p>
+    </header>
+
+    <section class="page_section">
+        <h2>
+            Enter your Contact Information
+        </h2>
+
+        <form method = "get" action = "thankyou.html" style="padding-top:10px;">
+
+            <div class="contact">
+                <label for="first_name">
+                    Name:
+                    <input class="input" type="text" name="first_name" id="first_name" required
+                        placeholder="First Name">
+                </label>
+            </div>
+
+            <div class="contact">
+                <label for="last_name">
+                    Last Name:
+                    <input class="input" type="text" name="last_name" id="last_name" required placeholder="Last Name">
+                </label>
+            </div>
+
+            <div class="contact">
+                <label for="phone">
+                    Phone Number:
+                    <input class="input" type="text" name="phone" id="phone" required placeholder="Phone Number">
+                </label>
+            </div>
+
+            <div class="contact">
+                <label for="email">
+                    Email:
+                    <input class="input" type="text" name="email" id="email" required placeholder="Email">
+                </label>
+            </div>
+
+            <h2>
+                Requested Amenities
+            </h2>
+
+            <p class="checkbox">
+                <label for="lantern">Lantern</label>
+                <input class="input_checkbox" type="checkbox" name="lantern" id="lantern">
+            </p>
+            <p class="checkbox">
+                <label for="shakespearean_lexicon">Shakespearean Lexicon</label>
+                <input class="input_checkbox" type="checkbox" name="shakespearean_lexicon" id="shakespearean_lexicon">
+            </p>
+            <p class="checkbox">
+                <label for="live_bard_performance">Live Bard Performance</label>
+                <input class="input_checkbox" type="checkbox" name="live_bard_performance" id="live_bard_performance">
+            </p>
+
+            <h2>
+                Preferred Stay
+            </h2>
+
+            <p class="radio">
+                <label for="weekday">Weekday</label>
+                <input class="radio_checkbox" type="radio" name="stay_preference" id="weekday">
+            </p>
+            <p class="radio">
+                <label for="weekend">Weekend</label>
+                <input class="radio_checkbox" type="radio" name="stay_preference" id="weekend">
+            </p>
+            <p class="radio">
+                <label for="multiple">Multiple</label>
+                <input class="radio_checkbox" type="radio" name="stay_preference" id="multiple">
+            </p>
+
+            <h2>
+                Contact Preference
+            </h2>
+
+            <select name="sport">
+                <option value="phone_option">Phone</option>
+                <option value="email_option">Email</option>
+                <option value="snail_mail_option">Snail Mail</option>
+                <option value="snail_mail_literal_option">Literal Snail Mail</option>
+                <option value="telegram_option">Telegram</option>
+                <option value="smoke_option">Smoke Signal</option>
+                <option value="radio_option">Radio Signal</option>
+                <option value="morse_code_option">Telepathic Morse Code</option>
+            </select>
+
+            <p><input class = "submit" type="submit" value="Submit"></p>
+
+        </form>
+
+    </section>
+
+    <footer>
+        <h2>Call and Reserve Now!</h2>
+        <p>&#169; Ye Olde Manor, 2025</p>
+        <p>&#9990; (417) 334-3300</p>
+        <p>&#x2709; 1131 Lonesome Drive, Branson, MO 65615</p>
+    </footer>
+
+    <div class="callout">
+        <div class="callout-header" style="text-align:center">RED HOT OPPORTUNITY!</div>
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <div class="callout-container">
+            <p style = "text-align:center">Ask about our summer discounts!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

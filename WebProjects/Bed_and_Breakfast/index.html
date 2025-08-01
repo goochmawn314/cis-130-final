@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--- 
+
+Name: Josh Gooch
+Date: July 7, 2025
+Filename: index.html
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        figure {
+            display: inline-block;
+            vertical-align: top
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <nav>
+        <a href="index.html"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home Page&nbsp;&nbsp;</a> | &nbsp;
+        <a href="rooms.html"><i class="fa-solid fa-key"></i>&nbsp;&nbsp;Room Options&nbsp;&nbsp;</a> | &nbsp;
+        <a href="request.html"><i class="fa-solid fa-circle-info"></i>&nbsp;&nbsp;Request Info&nbsp;&nbsp;</a>
+    </nav>
+
+    <header id="page_header">
+        <h1 style="position:relative;bottom:15px;font-size:75px;">Ye Olde Manor</h1>
+        <p style="position:relative;bottom:45px;font-size:32px;">A Medieval Lodging Experience in the Ozarks</p>
+    </header>
+
+    <section class="page_section">
+
+        <h2>Welcome!</h2>
+        <p>Are you tired of the daily grind of modern life? Well, take a step back in time by visiting our one-of-a-kind
+            B&B, modelled after life in Medieval England!</p>
+        <p>Whether you want to lavish like a wealthy aristocrat or languish like an ignoble peasant, we hath a room just
+            for thee!</p>
+        <p>There is something for everyone at the Ye Olde Manor!</p>
+
+        <figure>
+            <img src="Images/peasant_room.jpg" alt="Peasant Room" width="400" class="image1">
+            <figcaption style="font-weight:bold;font-size:18px;padding-top:15px;padding-left:125px;">For the Cheapskate
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="Images/king_room.jpg" alt="Peasant Room" width="400" class="image1">
+            <figcaption style="font-weight:bold;font-size:18px;padding-top:15px;padding-left:125px;">For the Spendthrift
+            </figcaption>
+        </figure>
+
+        <hr class="dotted">
+
+        <h2>Food</h2>
+        <p>Every reservation comes with a complementary breakfast and dinner!</p>
+        <p>Here are some of our comestibles...</p>
+
+
+        <figure>
+            <img src="Images/peasant_pottage.jpg" alt="Peasant Soup" width="400" height="250" class="image1">
+            <figcaption style="font-weight:bold;font-size:18px;padding-top:15px;padding-left:135px;">Serf Soup
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="Images/king_meal.jpg" alt="King's Buffet" width="400" height="250" class="image1">
+            <figcaption style="font-weight:bold;font-size:18px;padding-top:15px;padding-left:135px;">Royal Refections
+            </figcaption>
+        </figure>
+
+        <hr class="dotted">
+        <h2>Activities</h2>
+        <p>At the end of the day, take a dip in our all-access swimming pool!</p>
+        <figure>
+            <img src="Images/swimming_pool.jpg" alt="King's Buffet" width="400" height="250" class="image1">
+            <figcaption style="font-weight:bold;font-size:18px;padding-top:15px;padding-left:135px;">No Lifeguard
+            </figcaption>
+        </figure>
+    </section>
+
+    <footer>
+        <h2>Call and Reserve Now!</h2>
+        <p>&#169; Ye Olde Manor, 2025</p>
+        <p>&#9990; (417) 334-3300</p>
+        <p>&#x2709; 1131 Lonesome Drive, Branson, MO 65615</p>
+    </footer>
+
+    <div class="callout">
+        <div class="callout-header" style="text-align:center">RED HOT OPPORTUNITY!</div>
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <div class="callout-container">
+            <p style = "text-align:center">Ask about our summer discounts!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
